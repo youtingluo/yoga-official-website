@@ -1,0 +1,20 @@
+.link {
+  &-none-decoration {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &-color-light {
+    color: #fff;
+    &:hover {
+      color: #000;
+    }
+  }
+  &-color-primary {
+    color: #C0A4A5;
+    &:hover {
+      color: #000;
+    }
+  }
+}

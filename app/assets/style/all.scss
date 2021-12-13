@@ -1,0 +1,65 @@
+@import './helpers/base';
+@import './components/link';
+// * {
+//   outline: 1px solid #000;
+// }
+.banner-padding {
+  padding: 185px 0;
+}
+.banner {
+  background-image: url("https://images.unsplash.com/photo-1612157777902-5382bc6e864b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+.rounded-4 {
+  border-radius: 1rem;
+}
+@mixin mobile-up {
+  @media(min-width: 576px) and (max-width: 769px) {
+    @content
+  }
+};
+@mixin mobile {
+  @media(max-width: 576px){
+    @content
+  }
+};
+@mixin pad {
+  @media(max-width: 991.98px){
+    @content
+  }
+};
+.h-lg-card {
+  height: 420px;
+  @include mobile-up {
+    height: 252px;
+  }
+}
+.h-lg-img {
+  height: 628px;
+}
+.h-207 {
+  height: 207px;
+}
+.h-250 {
+  height: 250px;
+}
+.h-444 {
+  height: 444px;
+}
+.w-445 {
+  width: 445px;
+}
+.cover {
+  object-fit: cover;
+}
+.negative-m {
+  margin-left: -95px;
+  @include pad {
+    margin-left: -60px;
+  }
+  @include mobile {
+    margin-left: 0;
+  }
+}
