@@ -1,9 +1,11 @@
-$(function() {
-  const swiperCourse = new Swiper('.swiper', {
+"use strict";
+
+$(function () {
+  var swiperCourse = new Swiper('.swiper', {
     // Optional parameters
     autoplay: {
       loop: true,
-      disableOnInteraction: false,
+      disableOnInteraction: false
     },
     breakpoints: {
       // when window width is >= 320px
@@ -15,6 +17,7 @@ $(function() {
         slidesPerView: 1.4,
         spaceBetween: 30
       }
-    },
+    }
   });
 });
+//# sourceMappingURL=all.js.map
